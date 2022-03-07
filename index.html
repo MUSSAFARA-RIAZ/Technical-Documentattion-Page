@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            position: relative;
+            margin-left: 30%;
+            border-color: aqua;
+        }
+
+        header {
+            font-weight: bold;
+            font-size: 30px;
+
+            text-decoration: underline;
+            line-height: 1.2em;
+
+        }
+
+        .nav-link {
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .nav-link:hover {
+            color: blue;
+        }
+
+        li {
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: blueviolet;
+            list-style-type: circle;
+        }
+
+        #nav-bar {
+            position: fixed;
+            min-width: 290px;
+            top: 0px;
+            left: 0px;
+            width: 300px;
+            height: 100%;
+            border-right: solid;
+            border-color: rgba(0, 22, 22, 0.4);
+        }
+
+        code {
+            font-size: 20px;
+        }
+
+        @media only screen and (max-width: 815px) {
+
+            /* For mobile phones: */
+            #navbar ul {
+                border: 1px solid;
+                height: 207px;
+            }
+
+            #navbar {
+                background-color: white;
+                position: absolute;
+                top: 0;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                max-height: 275px;
+                border: none;
+                z-index: 1;
+                border-bottom: 2px solid;
+            }
+
+            #main-doc {
+                position: relative;
+                margin-left: 0px;
+                margin-top: 270px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <header>C++documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#What_should_you_already_know">What should you already know</a></li>
+            <li><a class="nav-link" href="#C_and_C++">C and C++</a></li>
+            <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Declaring_variable">Declaring variable</a></li>
+            <li><a class="nav-link" href="#Constants">Constants</a></li>
+            <li><a class="nav-link" href="#Data_types">Data types</a></li>
+            <li><a class="nav-link" href="#If_else_statement">If else statement</a></li>
+            <li><a class="nav-link" href="#Loop">Loop</a></li>
+            <li><a class="nav-link" href="#Function">Function</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header id="main-section">Introduction</header>
+            <article>
+                <p>C++is a cross-platform language that can be used to create high-performance applications. C++was
+                    developed by Bjarne Stroustrup,
+                    as an extension to the C language. C++gives programmers a high level of control over system
+                    resources and memory</p>
+                <p>C is a general-purpose high level language that was originally developed by Dennis Ritchie for the
+                    Unix operating system. It was first implemented on the Digital Eqquipment Corporation PDP-11
+                    computer in 1972. The Unix operating system and virtually all Unix applications are written in the C
+                    language. </p>
+            </article>
+        </section>
+        <section class="main-section" id="What_should_you_already_know">
+            <header id="main-section">what should you already know</header>
+            <article>
+                <ul>
+                    <li>C++has significantly more libraries and functions to use. If you're working with complex
+                        software,
+                        C++is a better fit because you have more libraries to rely on. Thinking practically,
+                        having knowledge of C++is often a requirement for a variety of programming roles.</li>
+                    <li>C reduces the gap between the low-level and high-level languages.</li>
+                    <li>Helps to understand the fundamentals of Computer Theories</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="C and C++">
+            <header>C and C++</header>
+            <article>
+                <p>the main difference between C and C++is that C is a procedural with no support for objects and
+                    classes whereas C++is a combination of procedural and object-oriented programming languages.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Hello_World">
+            <header>Hello World</header>
+            <article><code>#include<iostream><br>using namespace std;
+
+        <br>int main() {
+            <br>cout<<"hello world"<<endl;
+
+
+        }
+
+
+
+        </code>
+                <ul>
+                    <li>Open your editor and type this code</li>
+                    <li>The output would be "Hello World"</li><strong>Congrats ! you write your first
+                        c++program</strong>
+                </ul><code>#include<studio.h><br>int main() {
+            <br>printf("Hello World");
+            <br>
+        }
+
+        </code>
+                <ul>
+                    <li>We have a header file studio.h in c language</li>
+                    <li>printf hello world gives you output hello World</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <p>Varible are containers for storing the value of data types </p>
+                <li>int store integer,
+                    float store floating number,
+                    char store character etc</li>
+                <li>There are 3 types of variables in c++</li>
+                <ul>
+                    <li>Global Variable having scope in and out of the function</li>
+                    <li>local Variable having scope with in the function</li>
+                    <li>Static variable use with the static keyword</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Declaring_variable">
+            <header>Declaring variable </header>
+            <article><code><p>In C++varibale can be declared as </p>int a=10;
+        char b='a';
+        float b=78.56;
+
+        </code><strong>Here int is the data type of the variable a and 10 is the value that stored in a </strong>
+            </article>
+        </section>
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+            <article>
+                <p>Const keyword is use in c++to declare a variable constant </p>
+                <ul>
+                    <li>By using const you can change or overwrite the value of variable </li>
+                </ul>
+                <code>#include<iostream>using namespace std;
+
+        int main() {
+            const int a=10;
+            int a=90;
+
+        }
+
+        <ul><li>The above code with throw an error because we cant change the value of a initially it is declare as a const</li></ul></code>
+            </article>
+        </section>
+        <section class="main-section" id="If_else_statement">
+            <header>If else statement</header>
+            <article>
+                <p>If else statement is basically a conditional statement if first statement is true it will not check
+                    rest of the condition simply execute the first statement</p><code>int a=10;
+        int b=12;
+
+        if(a>b) {
+            cout<<"a is greater than b"<<endl;
+        }
+
+        else {
+            cout<<"b is greater than a"<<endl;
+
+        }
+
+        </code>
+                <li>The above c++code check the first condition obviously a is not greater than b here so it jumps into
+                    the 2nd condition and checks it if it is right print the statement which is present in the true
+                    condition</li>
+            </article>
+        </section>
+        <section class="main-section" id="Function">
+            <header>Function</header>
+            <article><code>void sum(para1, para2) {
+            int result=para1+para2;
+            cout<<"The result is"<<result;
+        }
+
+        sum(4, 6);
+        </code>
+                <ul>
+                    <li>The above mention c++code shows the sum of two numbers with the help of function</li>
+                    <li>Here void is the return type of the function which means NULL</li>
+                    <li>sum is the name of the function </li>
+                    <li>para1 and para2 is the parameter of the function sum</li>
+                    <li>Body of the function have one result variable which store the value of para1 and para2 sum</li>
+                    <li>sum(4, 6) is basically the call of the function with the arguments 4 and 6 4 is assigned to
+                        para1 and 6 is assigned to para2 </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Loop">
+            <header>Loop</header>
+            <article>
+                <h4>There are three types of loop in c++</h4>
+                <ul>
+                    <ol>For-loop</ol><code>int n=5;
+
+        for(int i=0; i<n; i++) {
+            cout<<i;
+
+
+
+        }
+
+        </code>
+                    <ul>
+                        <li>Loop is use when we dont want to write the same statement repeatedly its saves time as well
+                            as space</li>
+                        <li>for loop has three main part <ol>
+                                <li>Initialization part(int i=0)</li>
+                                <li>conditional part(i<n)< /li>
+                                <li>Increment part(i++)</li>
+                            </ol>
+                        </li>
+                        <li>The loop will execute until i is less than n it will break when value of i is increase of n
+                        </li>
+                    </ul>
+                </ul>
+                <ol>
+                    <li>While loop</li><code>int n=5;
+
+        while(i<n) {
+            i++;
+        }
+
+        (i=2);
+        cout<<i;
+
+        </code>
+                    <ol>
+                        <li>While loop must execue minimum one time its doesnot matter the condition is true or false
+                        </li>
+                        <li>After printing the value then it checks the condition</li>
+                        <li>Just like for loop its has same main parts</li>
+                    </ol>
+                </ol>
+                <ol>
+                    <li>do-whileloop</li><code>do {
+            // code block to be executed
+        }
+
+        while (condition);
+        </code>
+                </ol>
+            </article>
+        </section>
+        <section class="main-section" id="Data_types">
+            <header>Data types</header>
+            <article>
+                <p>Data types define the type of data a variable can hold</p>
+                <p>Data types in C++are categorised in three groups:</p>
+                <ol>
+                    <li>Built-in Data types</li>
+                    <li>User defined datatype</li>
+                    <li>Derived datatype</li>
+                </ol><code>int myNum=5; // Integer (whole number)
+        float myFloatNum=5.99; // Floating point number
+        double myDoubleNum=9.98; // Floating point number
+        char myLetter='D'; // Character
+        bool myBoolean=true; // Boolean
+        string myText="Hello"; // String
+        </code>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
